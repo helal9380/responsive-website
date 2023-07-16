@@ -114,7 +114,7 @@ nav li >a {
     padding-left: 15px;
 }
 .love-content p {
-    width: 571px;
+    width: 100%;
     margin-bottom: 30px;
 }
 .love-info h4 {
@@ -155,7 +155,7 @@ nav li >a {
     color: #131313;
 }
 .facts-title p {
-    width: 542px;
+    width: 100%;
 }
 .facts-container {
     display: flex;
@@ -165,7 +165,7 @@ nav li >a {
     text-align: center;
 }
 .facts-box {
-    padding: 30px 20px;
+    padding: 40px 20px;
     border: 1px solid #FF900E;
 }
 .facts-box img {
@@ -175,6 +175,31 @@ nav li >a {
 .facts-box h4 {
     font-size: 1.8rem;
 }
+/* sponser sectio style */
+.sponser-title {
+    margin: 80px 270px;
+    text-align: center;
+}
+.sponser-title h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.sponser-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 270px;
+}
+.sponser-container img {
+    width: 80px;
+}
+/* footer section style */
+.copy-right {
+    background-color: #fff5e7;
+    padding: 20px 60px;
+    text-align: center;
+}
 
 
 /* responsive style */
@@ -182,7 +207,9 @@ nav li >a {
     nav,
     nav ul,
     .feature-container,
-    .love-container
+    .love-container,
+    .facts-container,
+    .sponser-container
     {
       flex-direction: column;
     }
@@ -207,8 +234,18 @@ nav li >a {
         margin-top: 20px;
         font-size: 2rem;
     }
-    .love-container {
+    .love-container,
+    .facts-container,
+    .facts-title,
+    .sponser-container,
+    .sponser-title {
         margin: 40px 20px;
+    }
+    .sponser-container img {
+        margin-bottom: 20px;
+    }
+    .facts-box {
+        margin-bottom: 20px;
     }
     .ten-year-badge {
         right: 0px;
@@ -225,9 +262,15 @@ nav li >a {
         width: 100%;
     }
     .love-container,
-    .feature-container {
+    .feature-container,
+    .sponser-title,
+    .sponser-container,
+    .facts-title {
         flex-direction: column;
         margin: 50px 80px;
+    }
+    .sponser-container img {
+        margin-bottom: 30px;
     }
     .ten-year-badge {
         left: 190px;
